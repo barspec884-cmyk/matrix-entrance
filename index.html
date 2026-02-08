@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Amber Palette - Matrix Entrance</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --amber: #8b6b23; --bg: #0a0700; }
+        body { margin: 0; padding: 0; background: radial-gradient(circle at center, #1a1200 0%, var(--bg) 100%); color: #eee; font-family: 'EB Garamond', serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; text-align: center; }
+        .container { width: 90%; max-width: 400px; padding: 40px 0; }
+        
+        /* App Branding */
+        header { margin-bottom: 30px; }
+        .spade { font-size: 50px; color: var(--gold); margin-bottom: 5px; filter: drop-shadow(0 0 15px rgba(212,175,55,0.4)); }
+        h1 { font-size: 32px; letter-spacing: 5px; margin: 0; color: var(--gold); font-weight: 400; }
+        
+        /* Entrance Tagline */
+        .app-cm { font-size: 14px; line-height: 1.8; color: #ccc; margin: 25px 0; font-style: italic; }
+        .app-cm b { color: var(--gold); font-style: normal; }
+
+        /* Card Section (2 Cards) */
+        .card-container { display: flex; flex-direction: column; gap: 20px; width: 100%; }
+        .card {
+            background: linear-gradient(145deg, #1a1a1a, #000);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 15px; padding: 30px 20px; text-decoration: none; color: inherit;
+            transition: 0.3s; position: relative;
+        }
+        .card:active { transform: scale(0.97); border-color: var(--gold); background: rgba(212,175,55,0.05); }
+        .card h2 { color: var(--gold); margin: 0 0 8px 0; font-size: 24px; letter-spacing: 2px; }
+        .card p { margin: 0; font-size: 12px; color: #888; letter-spacing: 1px; }
+
+        /* Ecosystem / Other Apps */
+        .ecosystem { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(212,175,55,0.2); }
+        .ecosystem-title { font-size: 10px; color: var(--amber); letter-spacing: 3px; margin-bottom: 15px; }
+        .eco-links { font-size: 12px; color: #666; display: flex; justify-content: center; gap: 15px; }
+        .eco-links span { color: #444; }
+
+        /* Footer / Bar SPEC Link */
+        footer { margin-top: 50px; }
+        .home-link { text-decoration: none; color: #888; font-size: 12px; letter-spacing: 2px; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .home-link:hover { color: var(--gold); border-bottom: 1px solid var(--gold); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="spade">&nbsp;</div>
+        <h1>AMBER PALETTE</h1>
+        <p class="app-cm">
+            琥珀の座標へ、ようこそ。<br>
+            <b>Matrix Entrance</b>
+        </p>
+    </header>
+
+    <div class="card-container">
+        <a href="https://amber-matrix.vercel.app/" class="card">
+            <h2>Explore Matrix</h2>
+            <p>世界中の「琥珀の座標」を閲覧する</p>
+        </a>
+
+        <a href="https://amber-input.vercel.app/" class="card">
+            <h2>Add your Palette</h2>
+            <p>あなたの1杯を記録する</p>
+        </a>
+    </div>
+
+    <div class="ecosystem">
+        <div class="ecosystem-title">DIGITAL ARCHIVES</div>
+        <div class="eco-links">
+            Amber Dictionary <span>|</span> Whisky Quiz <span>|</span> Amber Style
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.bar-spec.com/" class="home-link">
+            Produced by Bar SPEC
+        </a>
+    </footer>
+</div>
+
+</body>
+</html>
